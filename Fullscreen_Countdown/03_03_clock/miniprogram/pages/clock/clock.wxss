@@ -1,0 +1,43 @@
+/* miniprogram/pages/clock/clock.wxss */
+
+.preview {
+  font-size: 20px;
+  padding: 10px 20px;
+  margin: 20px auto;
+}
+
+.color_section {
+  width:90%;
+}
+
+.color_wrapper {
+  margin: 20px auto;
+}
+
+.color_title {
+  margin-bottom: 5px;
+}
+
+.color_options {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.color_option {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.primary {
+  margin: 40px auto;
+}
+
+.shadow {
+  box-shadow: 2px 2px 1px 1px lightgrey;
+}
+
+.text_shadow {
+  text-shadow: 2px 2px 1px lightgrey;
+}
