@@ -15,4 +15,8 @@ A tutorial for developing WeChat Miniprogram
 - app.wxss 修改更新公告和联系客服按钮的样式
 - info.js 分享
 
+#### 03_03 功能实现 clock
+- clock 选择全屏时的背景颜色和字体颜色
+- 全屏显示当前时间
+
 
