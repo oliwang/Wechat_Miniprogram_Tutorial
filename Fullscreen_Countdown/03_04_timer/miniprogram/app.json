@@ -1,0 +1,49 @@
+{
+  "pages": [
+    "pages/timer/timer",
+    "pages/clock/clock",
+    "pages/info/info",
+    "pages/countdown/countdown",
+    "pages/clock/FS_clock",
+    "pages/timer/FS_timer"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "全屏倒计时",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#ffffff",
+    "selectedColor": "#ffffff",
+    "borderStyle": "white",
+    "backgroundColor": "#58e2c2",
+    "list": [
+      {
+        "selectedIconPath": "images/clock.png",
+        "iconPath": "images/clock.png",
+        "pagePath": "pages/clock/clock",
+        "text": "时钟"
+      },
+      {
+        "selectedIconPath": "images/countdown.png",
+        "iconPath": "images/countdown.png",
+        "pagePath": "pages/countdown/countdown",
+        "text": "倒计时"
+      },
+      {
+        "selectedIconPath": "images/stopwatch.png",
+        "iconPath": "images/stopwatch.png",
+        "pagePath": "pages/timer/timer",
+        "text": "计时"
+      },
+      {
+        "selectedIconPath": "images/info.png",
+        "iconPath": "images/info.png",
+        "pagePath": "pages/info/info",
+        "text": "信息"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}

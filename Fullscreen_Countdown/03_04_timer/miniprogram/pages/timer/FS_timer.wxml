@@ -1,0 +1,26 @@
+<!--miniprogram/pages/timer/FS_timer.wxml-->
+<view class="full_screen" style="color: {{text_color}}; background: {{background_color}}">
+  <view class="timer">
+    <view class="time_ele">{{minute}}</view>
+    <view>:</view>
+    <view class="time_ele">{{second}}</view>
+    <view>.</view>
+    <view class="time_ele">{{millisecond}}</view>
+  </view>
+  <view class="records_btns">
+    <view class="records">
+      <view class="lap_wrapper" wx:for="{{ laps }}" wx:for-index="idx" wx:for-item="lap">
+        <view class="lap_index">{{ idx+1 }}</view>
+        <view class="lap_value">{{ lap }}</view>
+      </view>
+    </view>
+
+    <view class="btns">
+      <view class="btn" id="clear_btn" style="display:{{paused ? 'block':'none'}};background:{{text_color}};color:{{background_color}};" bindtap="tapClear">重置</view>
+      <view class="btn" id="start_btn" style="display:{{paused ? 'block':'none'}};background:{{text_color}};color:{{background_color}};" bindtap="tapStart">开始</view>
+      <view class="btn" id="lap_btn" style="display:{{paused ? 'none':'block'}};background:{{text_color}};color:{{background_color}};" bindtap="tapLap">记录</view>
+      <view class="btn" id="pause_btn" style="display:{{paused ? 'none':'block'}};background:{{text_color}};color:{{background_color}};" bindtap="tapPause">暂停</view>
+    </view>
+  </view>
+  
+</view>

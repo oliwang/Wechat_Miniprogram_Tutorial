@@ -19,4 +19,7 @@ A tutorial for developing WeChat Miniprogram
 - clock 选择全屏时的背景颜色和字体颜色
 - 全屏显示当前时间
 
+#### 03_04 功能实现 timer
+- timer 选择全屏时的背景颜色和字体颜色
+- 全屏计时，通过按钮开始，暂停，记录，重置
 
