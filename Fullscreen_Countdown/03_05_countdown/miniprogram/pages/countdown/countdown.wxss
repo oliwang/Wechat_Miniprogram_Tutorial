@@ -1,0 +1,26 @@
+/* miniprogram/pages/countdown/countdown.wxss */
+
+.countdown_list {
+  width:90%;
+  margin-left:5%;
+  margin-right:5%;
+}
+
+.countdown_list_title {
+  margin-bottom: 10px;
+}
+
+.countdown_list_item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  padding:5px 16px;
+
+  background: white;
+  margin: 5px auto;
+}
+
+.countdown_btn {
+  color: #58e2c2;
+}

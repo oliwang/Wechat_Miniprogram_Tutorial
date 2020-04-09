@@ -1,0 +1,8 @@
+<!--miniprogram/pages/countdown/FS_countdown.wxml-->
+<view class="full_screen" style="color: {{text_color}}; background: {{background_color}}">
+  <view class="time_ele">{{hour}}</view>
+  <view>:</view>
+  <view class="time_ele">{{minute}}</view>
+  <view>:</view>
+  <view class="time_ele">{{second}}</view>
+</view>

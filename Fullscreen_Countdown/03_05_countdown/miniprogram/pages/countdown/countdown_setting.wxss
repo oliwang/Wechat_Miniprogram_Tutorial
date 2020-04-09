@@ -1,0 +1,40 @@
+/* miniprogram/pages/countdown/countdown_setting.wxss */
+
+.section {
+  width:90%;
+  margin: 10px auto;
+}
+
+.section_title {
+  margin: 5px auto;
+}
+
+.time_wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  width:100%;
+
+  margin: 5px auto;
+}
+
+input {
+  background: white;
+  border: 1px solid #d7d8d7;
+  border-radius: 5px;
+  text-align: right;
+  padding: 0px 5px;
+
+  width:40%;
+
+}
+
+.alarm_wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  width:100%;
+
+}

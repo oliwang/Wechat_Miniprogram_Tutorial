@@ -1,0 +1,58 @@
+<!--miniprogram/pages/countdown/countdown_setting.wxml-->
+<view class="container">
+  <view class="preview" style="color:{{text_color}}; background:{{background_color}};">{{minute_str}}:{{second_str}}</view>
+
+  <view class="time_section section">
+    <view class="section_title">设置倒计时时间</view>
+    <view class="time_wrapper">
+      <view class="time_title">分钟</view>
+      <input type="number" bindinput="changeMinute" value="{{minute}}"></input>
+    </view>
+    <view class="time_wrapper">
+      <view class="time_title">秒钟</view>
+      <input type="number" bindinput="changeSecond" value="{{second}}"></input>
+    </view>
+  
+  </view>
+
+  <view class="alarm_section section">
+    <view class="section_title">设置提示音</view>
+    <view class="alarm_wrapper">
+      <view class="alarm_label">是否添加提示音</view>
+      <switch type="checkbox" checked="{{alarm_on}}" bindchange="changeAlarm" color="#58e2c2"></switch>
+    </view>
+  
+  </view>
+
+  <view class="color_section">
+    <view class="color_wrapper">
+      <view class="color_title">背景颜色</view>
+      <view class="color_options">
+        <view class="color_option" wx:for="{{colors}}" wx:key="value" data-value="{{item.value}}" bindtap="changeBackgroundColor">
+          <view class="color_option_color {{ background_color == item.value ? 'shadow': ''}}" style="background:{{item.value}}; width: 30px; height:30px;"></view>
+          <view class="color_option_name {{ background_color == item.value ? 'text_shadow': ''}}">{{item.name}}</view>
+        
+        </view>
+      
+      </view>
+    
+    </view>
+
+    <view class="color_wrapper">
+      <view class="color_title">字体颜色</view>
+      <view class="color_options">
+        <view class="color_option" wx:for="{{colors}}" wx:key="value" data-value="{{item.value}}" bindtap="changeTextColor">
+          <view class="color_option_color {{ text_color == item.value ? 'shadow': ''}}" style="background:{{item.value}}; width: 30px; height:30px;"></view>
+          <view class="color_option_name {{ text_color == item.value ? 'text_shadow': ''}}">{{item.name}}</view>
+        
+        </view>
+      
+      </view>
+    
+    </view>
+  
+  </view>
+
+  <button class="primary" bindtap="addCountdown">添加倒计时</button>
+
+</view>

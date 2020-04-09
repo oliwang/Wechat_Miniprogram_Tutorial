@@ -23,3 +23,7 @@ A tutorial for developing WeChat Miniprogram
 - timer 选择全屏时的背景颜色和字体颜色
 - 全屏计时，通过按钮开始，暂停，记录，重置
 
+#### 03_05 功能实现 countdown
+- countdown 选择全屏时的背景颜色和字体颜色，倒计时时间，提示音
+- 全屏倒计时
+

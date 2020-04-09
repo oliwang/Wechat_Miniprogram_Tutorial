@@ -1,0 +1,18 @@
+<!--miniprogram/pages/countdown/countdown.wxml-->
+<view class="container">
+  <view class="countdown_list">
+    <view class="countdown_list_title">倒计时列表</view>
+    <view class="countdown_list_item" wx:for="{{countdown_list}}">
+      <view class="countdown_list_desc">
+        <span style="color:{{item.text_color}};background:{{item.background_color}};">{{item.time_str}}</span>
+        {{item.alarm_on ? "有提示音" : "无提示音"}}
+      </view>
+      <view class="countdown_list_item_btns">
+        <view class="countdown_list_item_delete countdown_btn" data-idx="{{index}}" bindtap="deleteItem">删除</view>
+      </view>
+    </view>
+    <view class="countdown_list_item countdown_btn" bindtap="addCountdown">添加倒计时</view>
+
+  </view>
+  <button class="primary" bindtap="goToCountdown">进入倒计时</button>
+</view>
